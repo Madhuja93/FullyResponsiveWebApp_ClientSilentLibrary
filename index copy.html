@@ -49,18 +49,9 @@
       <p>helen,onlinebooks</p>
 
       <div class="row">
-        <div class="course-col">
-          <h3>Kids</h3>
-          <p>adhhhhhh</p>
-        </div>
-        <div class="course-col">
-          <h3>Teens</h3>
-          <p>bggggggggggggggg</p>
-        </div>
-        <div class="course-col">
-          <h3>Adults</h3>
-          <p>chhhhhhhhhhhhhhhh</p>
-        </div>
+        <div class="course-col"></div>
+        <div class="course-col"></div>
+        <div class="course-col"></div>
       </div>
     </section>
 
@@ -168,5 +159,16 @@
       </div>
       <p>Created by <i class="fa fa-heart-o"></i> Madhuja Pabasara</p>
     </section>
+
+    <!--------------------------JavaScript for Toggle Menu------------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

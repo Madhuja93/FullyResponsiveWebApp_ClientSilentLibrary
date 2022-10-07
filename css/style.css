@@ -286,7 +286,7 @@ h3 {
   background-size: cover;
   border-radius: 10px;
   text-align: center;
-  padding: 100px 0; 
+  padding: 100px 0;
 }
 .cta h1 {
   color: rgb(198, 196, 233);
@@ -323,69 +323,66 @@ h3 {
 }
 /*--------------About page-----------*/
 
-.sub-header{
+.sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("E:/Assignment2/A2/images/bg3.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("E:/Assignment2/A2/images/bg3.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
   color: #fff;
 }
-.sub-header h1{
+.sub-header h1 {
   margin-top: 100px;
-
 }
-.about{
-  width:80%;
+.about {
+  width: 80%;
   margin: auto;
   padding-top: 80px;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
-.about-col{
-  flex-basis:48%;
+.about-col {
+  flex-basis: 48%;
   padding: 30px 2px;
 }
 
-.about-col img{
-  width:100%; 
+.about-col img {
+  width: 100%;
 }
 
-.about-col h1{
+.about-col h1 {
   padding-top: 0;
 }
 
-.about-col p{
-  padding:15px 0 25px;
+.about-col p {
+  padding: 15px 0 25px;
 }
-.blue-btn{
+.blue-btn {
   border: 1px solid#03023d;
-background: transparent;
-color: #03023d;
+  background: transparent;
+  color: #03023d;
 }
 
-.blue-btn:hover{
+.blue-btn:hover {
   color: #fff;
 }
 /*-----------Connect-----*/
-.connect{
-  width:80%;
+.connect {
+  width: 80%;
   margin: auto;
   padding: 60px 0;
 }
 
-.connect-left{
+.connect-left {
   flex-basis: 65%;
-
 }
-.connect-left img{
-  width:100%;
-
+.connect-left img {
+  width: 100%;
 }
-.connect-left h2{
+.connect-left h2 {
   color: #222;
   font-weight: 600;
   margin: 30px 0;
-
 }
