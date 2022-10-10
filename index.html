@@ -7,8 +7,14 @@
     <title>Welcome to the Silent Library</title>
     <link rel="stylesheet" href="css\style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="js\script.js"></script>
   </head>
 
@@ -19,12 +25,18 @@
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services and Specialties</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Connect</a></li>
-            <li><a href="">Explore</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+                <div class="subMenu1">
+                  <ul>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Library Cards</a></li>
+                  </ul>
+                </div>
+            <li><a href="#">Services and Specialties</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Connect</a></li>
+            <li><a href="#">Explore</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -35,7 +47,6 @@
         <a href="" class="hero-btn">Visit Us To Know More</a>
       </div>
     </section>
-
 
     <!-------------------------course---------------------------------->
     <section class="course">
@@ -152,8 +163,8 @@
       </div>
     </section>
 
-   <!----------------------------Footer---------------------------------->
-    <!--------------center footer--------------->
+    <!----------------------------Footer---------------------------------->
+    
     <hr color="#03023d" />
     <section class="footer">
       <div class="row">
@@ -183,8 +194,16 @@
           </div>
           <p>Site by <i class="fa fa-heart-o"></i> Madhuja Pabasara</p>
         </div>
-        <div class="footer-col2" >
+
+        <div class="footer-col3">
+          <h4>Visit</h4>
+
           <div class="icons">
+            <p><i class="fa fa-angle-double-right">&nbsp;Central Library</i></p>
+            <p>
+              <i class="fa fa-angle-double-right">&nbsp;Branch Libraries</i>
+            </p>
+            <p><i class="fa fa-angle-double-right">&nbsp;Projects</i></p>
           </div>
         </div>
       </div>

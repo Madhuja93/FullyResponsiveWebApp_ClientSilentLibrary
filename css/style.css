@@ -7,7 +7,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url('../../ASG2/images/bg.jpg');
+    url("../../ASG2/images/bg.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -37,7 +37,7 @@ nav img {
   font-size: 13px;
 }
 .nav-links ul li::after {
-  content:'';
+  content: "";
   width: 0%;
   height: 2px;
   background: #0899b3;
@@ -48,6 +48,18 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
+.subMenu1{
+  /* display:none; */
+}
+.nav-links ul li:hover .subMenu{
+  display:block;
+  position: absolute;
+  background: transparent;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
 .text-box {
   width: 90%;
   color: #fff;
@@ -82,18 +94,21 @@ nav img {
   transition: 1s;
 }
 
-nav.fa{
+nav.fa {
+  margin-right: 8px;
   display: none;
 }
-@media (max-width: 700px){
+
+
+@media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
   }
 
-  .nav-links ul li{
+  .nav-links ul li {
     display: block;
   }
-  .nav-links{
+  .nav-links {
     position: absolute;
     background: #03023d;
     height: 100vh;
@@ -163,8 +178,6 @@ h3 {
   }
 }
 
-
-
 /*---------------------------books-----------------------------------*/
 .books {
   width: 80%;
@@ -214,7 +227,6 @@ h3 {
   opacity: 1;
 }
 
-
 /*---------------------------------facilities-------------------------*/
 .facilities {
   width: 80%;
@@ -240,8 +252,6 @@ h3 {
   margin-bottom: 15px;
   text-align: left;
 }
-
-
 
 /*----------------------------testimonials------------------------*/
 .testimonials {
@@ -283,15 +293,13 @@ h3 {
   }
 }
 
-
-
 /*------------------------call to action------------------------------*/
 .cta {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient();
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../../ASG2/images/img1.jpg');
+    url("../../ASG2/images/img1.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -311,11 +319,6 @@ h3 {
 
 /*-----------------------------footer------------------------------------*/
 
-.footer-col2{
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-}
 
 .footer h4 {
   margin-bottom: 25px;
@@ -333,13 +336,29 @@ h3 {
   color: #169ddb;
 }
 
-.footer-col1{
+.footer-col1 {
   width: 100%;
+  padding: 30px 0;
+  text-indent: 30;
   text-align: left;
+  padding-left: 50px;
+}
+.footer-col2 {
+  width: 100%;
+  text-align: center;
   padding: 30px 0;
 }
-
-
+.footer-col3 {
+  width: 100%;
+  padding: 30px 0;
+  text-indent: 30;
+  text-align: right;
+  padding-right: 50px;
+  Color:#03023d;
+}
+.footer-col3 h4{
+  padding-right: 50px;
+}
 
 /*-------------------------About page-----------------------------------*/
 
@@ -347,39 +366,37 @@ h3 {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("images/bg3.jpg");
+    url("../../ASG2/images/bg2.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
   color: #fff;
 }
-/*.header1 h1 {
-  margin-top: 100px;
-}*/
-.about{
+
+.about {
   width: 80%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
 
-.about-col{
+.about-col {
   flex-basis: 48%;
   padding: 30px 2px;
 }
 
-.about-col img{
+.about-col img {
   width: 90%;
 }
 
-.about-col h1{
+.about-col h1 {
   padding-top: 0;
 }
 
-.about-col p{
+.about-col p {
   padding: 15px 0 25px;
 }
-.blue-btn{
+.blue-btn {
   border: 1px solid#03023d;
   background: transparent;
   color: #03023d;
@@ -389,21 +406,3 @@ h3 {
   color: #fff;
 }
 
-/*------------------------------Connect-----------------------------------*/
-.connect {
-  width: 80%;
-  margin: auto;
-  padding: 60px 0;
-}
-
-.connect-left {
-  flex-basis: 65%;
-}
-.connect-left img {
-  width: 100%;
-}
-.connect-left h2 {
-  color: #222;
-  font-weight: 600;
-  margin: 30px 0;
-}
