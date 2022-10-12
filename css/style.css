@@ -11,7 +11,44 @@
   background-position: center;
   background-size: cover;
   position: relative;
+ }
+/*---------------Searchbar-------------*/
+
+.search-bar{
+  width:100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 0.01px 5px;
+  backdrop-filter: blur(4px) saturate(180%);
 }
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  color: #fff;
+  font-size: 20px;
+}
+::placeholder{
+  color: #8b8a94;
+}
+.search-bar button img{
+  width:25px;
+}
+.search-bar button{
+  border:0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background:transparent;
+  cursor: pointer;
+}
+
+
 nav {
   display: flex;
   padding: 2% 6%;
@@ -59,23 +96,41 @@ nav img {
   border-bottom: 3px solid rgb(13, 139, 174);
 }
 
+
 .text-box {
   width: 90%;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .text-box h1 {
-  font-size: 62px;
+  font-size: 70px;
+  color: rgb(10, 10, 10);
+  font-family: ui-monospace;
+/*-webkit-text-stroke:1px #fff;*/
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+background-repeat: no-repeat;
+-webkit-background-clip:text;
+background-position: -1000px 0;
+animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+  100%{
+    background-position: 0 0;
+  }
 }
 .text-box p {
   margin: 10px 0 40px;
-  font-size: 14px;
-  color: #fff;
+  font-size: 16px;
+  color:#169ddb;
 }
+
+
 .hero-btn {
   display: inline-block;
   text-decoration: none;
@@ -88,11 +143,10 @@ nav img {
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 1px solid #169ddb;
-  background: #169ddb;
+  border: 1px solid #03023d;
+  background: #03023d;
   transition: 1s;
 }
-
 nav.fa {
   margin-right: 8px;
   display: none;
@@ -161,6 +215,9 @@ p {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
+}
+.row h3{
+  color: #03023d;
 }
 .events-col {
   flex-basis: 31%;
