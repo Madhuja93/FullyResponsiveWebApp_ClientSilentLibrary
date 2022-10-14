@@ -12,17 +12,20 @@
   background-size: cover;
   position: relative;
 }
+
 /*---------------Searchbar-------------*/
 
 .search-bar {
   width: 100%;
-  max-width: 500px;
+  max-height: 60px;
+  max-width: 400px;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   border-radius: 60px;
-  padding: 0.01px 5px;
+  padding: 0.01 5px;
   backdrop-filter: blur(4px) saturate(180%);
+  
 }
 .search-bar input {
   background: transparent;
@@ -96,7 +99,7 @@ nav img {
 }
 
 .text-box {
-  width: 90%;
+  width: 60%;
   color: #fff;
   position: absolute;
   top: 70%;
@@ -104,15 +107,15 @@ nav img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.text-box h1 {
-  font-size: 70px;
+.text-box h6 {
+  font-size: 20px;
   color: rgb(10, 10, 10);
   font-family: ui-monospace;
   /*-webkit-text-stroke:1px #fff;*/
   color: transparent;
-  background-image: linear-gradient(#fff, #fff);
+  background-image: linear-gradient(#92ceea, #92ceea);
   background-repeat: no-repeat;
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
   background-position: -1000px 0;
   animation: backcolor 5s linear infinite alternate;
 }
@@ -122,18 +125,20 @@ nav img {
     background-position: 0 0;
   }
 }
-.text-box p {
-  margin: 10px 0 40px;
-  font-size: 16px;
-  color: #169ddb;
+.text-box h1 {
+  margin: 10px 10 40px;
+  font-size: 80px;
+  color: #f1f9fc;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .hero-btn {
+  margin-top: 50px;
   display: inline-block;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
-  padding: 12px 34px;
+  padding: 10px 34px;
   font-size: 13px;
   background: transparent;
   position: relative;
@@ -429,12 +434,110 @@ h3 {
   padding-right: 50px;
 }
 
-/*-------------------------About page-----------------------------------*/
+/*---------------LogIn and Register-----------*/
+.account button {
+  width: 100px;
+  margin: 10px auto;
+  position: right;
+  box-shadow: 0 0 5px 2px #92ceea;
+  border-radius: 30px;
+  color: #92ceea;
+}
+.account button {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+.loginregister {
+  width: 360px;
+  height: 550px;
+  background: rgb(110, 111, 103);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.loginregister h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.loginregister p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginregister input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginregister input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginregister input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #03023d;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginregister input[type="submit"]:hover {
+  cursor: pointer;
+  background: #0899b3;
+  color: #2b2b4b;
+}
+.loginregister a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+.loginregister a:hover {
+  color: #03023d;
+}
+.loginregister input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*-------------------------sub pages-----------------------------------*/
 
 .header1 {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background-image: linear-gradient(rgba(7, 7, 66, 0.7), rgba(126, 139, 196, 0.7)),
     url("../../ASG2/images/bg2.jpg");
   background-position: center;
   background-size: cover;
