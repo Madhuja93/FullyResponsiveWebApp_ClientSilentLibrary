@@ -24,8 +24,7 @@
   align-items: center;
   border-radius: 60px;
   padding: 0.01 5px;
-  backdrop-filter: blur(4px) saturate(180%);
-  
+  backdrop-filter: blur(4px) saturate(180%);  
 }
 .search-bar input {
   background: transparent;
@@ -149,13 +148,12 @@ nav img {
   background: #03023d;
   transition: 1s;
 }
-nav.fa {
-  margin-right: 8px;
+ nav .fa{
   display: none;
 }
 
 @media (max-width: 700px) {
-  .text-box h1 {
+  .text-box h1{
     font-size: 20px;
   }
 
@@ -164,7 +162,7 @@ nav.fa {
   }
   .nav-links {
     position: absolute;
-    background: #03023d;
+    background: #1f1c5e;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -174,7 +172,7 @@ nav.fa {
     transition: 1s;
   }
 
-  nav.fa {
+  nav .fa{
     display: block;
     color: #fff;
     margin: 10px;
@@ -182,7 +180,7 @@ nav.fa {
     cursor: pointer;
   }
 
-  .nav-links ul {
+  .nav-links ul{
     padding: 30px;
   }
 }
@@ -236,8 +234,8 @@ h3 {
 .events-col:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 700px) {
-  .row {
+@media (max-width:700px){
+  .row{
     flex-direction: column;
   }
 }
@@ -325,6 +323,7 @@ h3 {
   color: #03023d;
   text-decoration: none;
 }
+
 /*----------------------------testimonials------------------------*/
 .testimonials {
   width: 80%;
