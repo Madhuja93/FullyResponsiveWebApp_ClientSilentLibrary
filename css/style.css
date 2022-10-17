@@ -201,7 +201,7 @@ hr {
 h1 {
   font-size: 36px;
   font-weight: 600;
-  color: #03023d;
+  color: #4eb8e6;
 }
 p {
   color: #0c0b51;
@@ -392,6 +392,9 @@ h3 {
 .footer {
   background: rgb(210, 246, 248);
 }
+.footer a{
+  color: #03023d;
+}
 
 .footer h4 {
   margin-bottom: 25px;
@@ -536,7 +539,7 @@ input[type="email"] {
 .header1 {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(7, 7, 66, 0.7), rgba(126, 139, 196, 0.7)),
+  background-image: linear-gradient(rgba(7, 7, 66, 0.7), rgba(23, 25, 33, 0.7)),
     url("../../ASG2/images/bg2.jpg");
   background-position: center;
   background-size: cover;

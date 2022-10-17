@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Silent Library</title>
+    <title>Policies- Silent Library</title>
     <link rel="stylesheet" href="css\style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -19,36 +19,44 @@
   </head>
 
   <body>
-    <section class="header">
+    <section class="header1">
       <nav>
-        <a href="login.html"><img src="images\logo.png" /></a>
+        <a href="about.html"><img src="images\logo.png" /></a>
         <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-              <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Home</a></li>
+            <li><a href="servicesandspecialties.html">Services and Specialties</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="explore.html">Explore</a></li>
           </ul>
-         </div>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
+      <h1>Policies</h1>
     </section>
-  <!-----Login and Register------------->
-  <section>        
-  <div class="loginregister">
-            <img src="images/login.png" class="avatar">
-              <h1>Login Here</h1>
-              <form>
-                  <p>Username</p>
-                  <input type="text" name="" placeholder="Enter Username" required>
-                  <p>Password</p>
-                  <input type="password" name="" placeholder="Enter Pssword" required><br><br><br>
-                  <input type="submit" name="" value="login">
-                  <a href="#">Forgot Password</a><br>
-                  <a href="#">Don't have an account</a>
-    
-              </form>
+    <!-----------------About content------------------------------------->
+
+    <section class="about">
+      <div class="row">
+        <div class="about-col">
+          <h1>Circulation Services</h1>
+          <p>Library Card Policy<br>
+            Checkout Policy<br>
+            Customer Service Policy
+          </p>
+          <a href="explore.html" class="hero-btn blue-btn">Read Now</a>
           </div>
+        <div class="about-col">
+          <img src="images\img1.jpg" />
+        </div>
+      </div>
     </section>
 
-    <!----------------------------Footer---------------------------------->
-    <section class="footer">
+     <!----------------------------Footer---------------------------------->
+     <section class="footer">
       <div class="row">
         <div class="footer-col1">
           <div class="icons">
@@ -63,7 +71,7 @@
         </div>
 
         <div class="footer-col2">
-          <h4><a href="privacypolicy.html">Privacy Policy</a></h4>
+          <h4>Privacy Policy</h4>
           <p>
             <i class="fa fa-copyright"></i>Silent Library. All Rights Reserved
           </p>
@@ -90,5 +98,5 @@
         </div>
       </div>
     </section>
- 
-    </body></html>
+  </body>
+  </html>
