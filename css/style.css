@@ -12,7 +12,7 @@
   background-size: cover;
   position: relative;
 }
-.account{
+.account {
   text-align: right;
 }
 
@@ -20,14 +20,20 @@
 .search-bar {
   width: 100%;
   max-height: 60px;
-  max-width: 400px;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   border-radius: 60px;
   padding: 0.01 5px;
-  backdrop-filter: blur(4px) saturate(180%);  
+  backdrop-filter: blur(4px) saturate(180%);
 }
+
+.searchbox {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 10%;
+}
+
 .search-bar input {
   background: transparent;
   flex: 1;
@@ -100,12 +106,8 @@ nav img {
 }
 
 .text-box {
-  width: 60%;
   color: #fff;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 15px;
   text-align: center;
 }
 .text-box h6 {
@@ -116,7 +118,7 @@ nav img {
   color: transparent;
   background-image: linear-gradient(#92ceea, #92ceea);
   background-repeat: no-repeat;
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   background-position: -1000px 0;
   animation: backcolor 5s linear infinite alternate;
 }
@@ -150,12 +152,12 @@ nav img {
   background: #03023d;
   transition: 1s;
 }
- nav .fa{
+nav .fa {
   display: none;
 }
 
 @media (max-width: 700px) {
-  .text-box h1{
+  .text-box h1 {
     font-size: 20px;
   }
 
@@ -174,7 +176,7 @@ nav img {
     transition: 1s;
   }
 
-  nav .fa{
+  nav .fa {
     display: block;
     color: #fff;
     margin: 10px;
@@ -182,7 +184,7 @@ nav img {
     cursor: pointer;
   }
 
-  .nav-links ul{
+  .nav-links ul {
     padding: 30px;
   }
 }
@@ -236,8 +238,8 @@ h3 {
 .events-col:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-@media (max-width:700px){
-  .row{
+@media (max-width: 700px) {
+  .row {
     flex-direction: column;
   }
 }
@@ -394,7 +396,7 @@ h3 {
 .footer {
   background: rgb(210, 246, 248);
 }
-.footer a{
+.footer a {
   color: #03023d;
 }
 
@@ -437,7 +439,7 @@ h3 {
 .footer-col3 h4 {
   padding-right: 50px;
 }
-.footer a{
+.footer a {
   text-decoration: none;
 }
 /*---------------LogIn and Register-----------*/
@@ -584,7 +586,7 @@ input[type="email"] {
   color: #fff;
 }
 /*----------------------------sitemap--------------------------*/
-.sitemap-col2 a{
- text-decoration: none;
- color: #03023d;
+.sitemap-col2 a {
+  text-decoration: none;
+  color: #03023d;
 }
