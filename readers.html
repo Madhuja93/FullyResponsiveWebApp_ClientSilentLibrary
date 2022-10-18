@@ -40,11 +40,103 @@
     <!-----------------UserInfo------------------------------------->
 
     <section>
-      <div class="userinfo">
-        <div>First Name : <span id="firstName"> </span></div>
-        <div>Last Name : <span id="lastName"> </span></div>
-        <div>Email Address : <span id="email"> </span></div>
-        <div>Password : <span id="password"> </span></div>
+      <div class="loginregister userinfo">
+        <img src="images/login.png" class="avatar" />
+        <h1>Reader Info Here</h1>
+
+        <div>
+          <p>First Name</p>
+          <span id="firstName"> </span>
+        </div>
+        <div>
+          <p>Last Name</p>
+          <span id="lastName"> </span>
+        </div>
+        <div>
+          <p>email</p>
+          <span id="email"> </span>
+        </div>
+        <div>
+          <p>Password</p>
+          <span id="password"> </span>
+        </div>
+        <div class="form-action-buttons">
+          <br />
+          <div class="form-action-buttons">
+            <input
+              type="submit"
+              name=""
+              value="Update"
+              onclick="onUpdateButtonClick()"
+            />
+            <input
+              type="submit"
+              name=""
+              value="Delete"
+              onclick="onDeleteButtonClick()"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="loginregister update-btn">
+        <img src="images/login.png" class="avatar" />
+        <h1>Update Here</h1>
+        <form
+          action=""
+          id="readers-form"
+          onsubmit="event.preventDefault();"
+          autocomplete="off"
+        >
+          <div>
+            <p>First Name</p>
+            <input
+              type="text"
+              name=""
+              id="firstName_0"
+              placeholder="Enter your Email address"
+              required
+            />
+          </div>
+          <div>
+            <p>Last Name</p>
+            <input
+              type="text"
+              name=""
+              id="lastName_0"
+              placeholder="Enter your Email address"
+              required
+            />
+          </div>
+          <div>
+            <p>email</p>
+            <input
+              type="email"
+              name=""
+              id="email_0"
+              placeholder="Enter your Email address"
+              required
+            />
+          </div>
+          <div>
+            <p>Password</p>
+            <input
+              type="password"
+              name=""
+              id="password_0"
+              placeholder="Enter your Password"
+              required
+            />
+          </div>
+          <div class="form-action-buttons">
+            <input
+              type="submit"
+              name=""
+              value="Update"
+              onclick="onUpdateRecord()"
+            />
+          </div>
+        </form>
       </div>
     </section>
 
