@@ -15,7 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src=js\script.js></script>></script>
+    <script src="js\script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -23,30 +28,68 @@
       <nav>
         <a href="register.html"><img src="images\logo.png" /></a>
         <div class="nav-links" id="navLinks">
-          <ul><li><a href="index.html">Home</a></li></ul>
-         </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
       </nav>
     </section>
-  <!------------------------------login----------------------------------->
-  <section>        
-  <div class="loginregister">
-            <img src="images/login.png" class="avatar">
-              <h1>Register Here</h1>
-              <form>
-                  <p>First Name</p>
-                  <input type="text" name="" placeholder="Enter Firstname" required>
-                  <p>Last Name</p>
-                  <input type="text" name="" placeholder="Enter Lastname" required>
-                  <p>Email Address</p>
-                  <input type="email" name="" placeholder="Enter Your email"required>
-                  <p>Password</p>
-                  <input type="password" name="" placeholder="Enter your Password"required>
-
-                  <input type="submit" name="" value="register">
-              
-    
-              </form>
+    <!------------------------------Register----------------------------------->
+    <section>
+      <div class="loginregister">
+        <img src="images/login.png" class="avatar" />
+        <h1>Register Here</h1>
+        <form
+          action=""
+          id="readers-form"
+          onsubmit="event.preventDefault();onFormSubmit();"
+          autocomplete="off"
+        >
+          <div>
+            <p>First Name</p>
+            <input
+              type="text"
+              name=""
+              id="firstName"
+              placeholder="Enter your Email address"
+              required
+            />
           </div>
+          <div>
+            <p>Last Name</p>
+            <input
+              type="text"
+              name=""
+              id="lastName"
+              placeholder="Enter your Email address"
+              required
+            />
+          </div>
+          <div>
+            <p>email</p>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your Email address"
+              required
+            />
+          </div>
+          <div>
+            <p>Password</p>
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="Enter your Password"
+              required
+            />
+          </div>
+          <div class="form-action-buttons">
+            <input type="submit" name="" value="register" />
+          </div>
+        </form>
+      </div>
     </section>
 
     <!----------------------------Footer---------------------------------->
@@ -76,7 +119,12 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-twitter"></i>
           </div>
-          <p>Site by <i class="fa fa-heart-o"></i> Madhuja Pabasara<br><a href="sitemap.html">(Site Map)</a></p>
+          <p>
+            Site by <i class="fa fa-heart-o"></i> Madhuja Pabasara<br /><a
+              href="sitemap.html"
+              >(Site Map)</a
+            >
+          </p>
         </div>
 
         <div class="footer-col3">
@@ -92,5 +140,5 @@
         </div>
       </div>
     </section>
- 
-    </body></html>
+  </body>
+</html>
