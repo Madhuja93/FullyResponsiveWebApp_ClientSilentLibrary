@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Silent Library</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js\script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="header1">
+      <nav>
+        <a href="readers.html"><img src="images\logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>User Info</h1>
+    </section>
+    <!-----------------UserInfo------------------------------------->
+
+    <section>
+      <div class="userinfo">
+        <div>First Name : <span id="firstName"> </span></div>
+        <div>Last Name : <span id="lastName"> </span></div>
+        <div>Email Address : <span id="email"> </span></div>
+        <div>Password : <span id="password"> </span></div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        var userInfo = sessionStorage.getItem("readerInfo");
+        var userInfoJSON = JSON.parse(userInfo);
+        $("#firstName").text(userInfoJSON._firstName);
+        $("#lastName").text(userInfoJSON._lastName);
+        $("#email").text(userInfoJSON._email);
+        $("#password").text(userInfoJSON._password);
+      });
+    </script>
+  </body>
+</html>
