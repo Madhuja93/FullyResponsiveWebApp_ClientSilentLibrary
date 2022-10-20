@@ -142,12 +142,13 @@
 
     <script>
       $(document).ready(function () {
-        var userInfo = sessionStorage.getItem("readerInfo");
-        var userInfoJSON = JSON.parse(userInfo);
-        $("#firstName").text(userInfoJSON._firstName);
-        $("#lastName").text(userInfoJSON._lastName);
-        $("#email").text(userInfoJSON._email);
-        $("#password").text(userInfoJSON._password);
+        
+        var _userInfo = getreaderInfoRecord();
+
+        $("#firstName").text(_userInfo._firstName);
+        $("#lastName").text(_userInfo._lastName);
+        $("#email").text(_userInfo._email);
+        $("#password").text(_userInfo._password);
       });
     </script>
   </body>
