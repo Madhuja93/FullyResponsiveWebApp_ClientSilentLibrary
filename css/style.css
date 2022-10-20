@@ -594,3 +594,7 @@ input[type="email"] {
   text-decoration: none;
   color: #03023d;
 }
+
+.mod {
+  margin: 5px;
+}

@@ -31,6 +31,7 @@
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="admin.html">Admin</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -142,13 +143,19 @@
 
     <script>
       $(document).ready(function () {
-        
         var _userInfo = getreaderInfoRecord();
 
         $("#firstName").text(_userInfo._firstName);
         $("#lastName").text(_userInfo._lastName);
         $("#email").text(_userInfo._email);
         $("#password").text(_userInfo._password);
+
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var isUpdate = url.searchParams.get("Update");
+        if (isUpdate) {
+          onUpdateButtonClick();
+        }
       });
     </script>
   </body>

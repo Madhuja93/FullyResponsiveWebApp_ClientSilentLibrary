@@ -8,13 +8,22 @@ function hideMenu() {
 }
 
 function onFormSubmit() {
-  
   var firstname = $("#firstName").val();
   var lastname = $("#firstName").val();
   var Email = $("#email").val();
   var Password = $("#password").val();
 
-  var generatedId = localStorage.length + 1;
+  var largestNumber = 0;
+
+  if (localStorage.length != 0) {
+    Object.keys(localStorage).forEach(function (key) {
+      if (largestNumber < JSON.parse(localStorage.getItem(key))._Id) {
+        largestNumber = JSON.parse(localStorage.getItem(key))._Id;
+      }
+    });
+  }
+
+  var generatedId = largestNumber + 1;
 
   var userInfo = {
     _Id: generatedId,
@@ -32,7 +41,6 @@ function onFormSubmit() {
 }
 
 function onFormUpdate() {
-  
   var firstname = $("#firstName").val();
   var lastname = $("#firstName").val();
   var Email = $("#email").val();
@@ -64,7 +72,6 @@ function onUpdateButtonClick() {
 }
 
 function onDeleteButtonClick() {
-  
   var userInfo = getreaderInfoRecord();
   localStorage.removeItem("readerInfo_" + userInfo._Id);
   alert("Successfully Deleted");
@@ -73,7 +80,6 @@ function onDeleteButtonClick() {
 }
 
 function onUpdateRecord() {
-  
   var firstname = $("#firstName_0").val();
   var lastname = $("#lastName_0").val();
   var Email = $("#email_0").val();
@@ -116,4 +122,17 @@ function getreaderInfoRecord() {
   }
 
   return _userInfo;
+}
+
+function onUpdate(userId) {
+  window.location.assign(
+    "readers.html?Id=readerInfo_" + userId + "&Update=true"
+  );
+}
+
+function onDelete(userId) {
+  localStorage.removeItem("readerInfo_" + userId);
+  alert("Successfully Deleted");
+
+  location.reload();
 }
